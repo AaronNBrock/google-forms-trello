@@ -13,15 +13,15 @@ This is an example of using Google App Scripts to create Trello cards when a Goo
 
 ### Get list ID
 1. Run the following command replacing:
-  ```bash
-  key="<your-key>" \
-  token="<your-token>" \
-  trelloUsername="<you-trello-username>" \
-  boardName="<board-name>" \
-  listName="<list-name>" \
-  ./getListId.sh
-  ```
-  (script from [here](https://stackoverflow.com/a/65913616/7607701))
+    ```bash
+    key="<your-key>" \
+    token="<your-token>" \
+    trelloUsername="<you-trello-username>" \
+    boardName="<board-name>" \
+    listName="<list-name>" \
+    ./getListId.sh
+    ```
+    (script from [here](https://stackoverflow.com/a/65913616/7607701))
 1. Update the `listId` at the top of `Code.js` file
 
 ### Create Google Form, Spreadsheet & App Script
@@ -34,11 +34,11 @@ This is an example of using Google App Scripts to create Trello cards when a Goo
 ### Configure App Script
 1. Copy the entirety of `Code.js` into `Code.gs`
 1. On the left select "Triggers" > "+ Add Trigger" and fill in the following:
-  * "Choose which function to run": `onSubmit`
-  * "Choose which deployment should run": `Head`
-  * "Select event source": `From spreadsheet`
-  * "Select event type": `On form submit`
-  * "Failure notifications settings": Select as desired
+    * "Choose which function to run": `onSubmit`
+    * "Choose which deployment should run": `Head`
+    * "Select event source": `From spreadsheet`
+    * "Select event type": `On form submit`
+    * "Failure notifications settings": Select as desired
 1. When you press "Save" complete the a google Oauth permissions popup.
   (**Note:** You will see a "Google hasn't verified this app" warning, from which you'll have to select "Advanced" then "Go to Untitled project (unsafe)")
 
