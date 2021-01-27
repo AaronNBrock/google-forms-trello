@@ -3,16 +3,15 @@
 This is an example of using Google App Scripts to create Trello cards when a Google Form is submitted.
 
 ## Prereqs
-* install `curl`
-* (optional) install `jq`
+* install `bash`, `curl` & `jq`
 
 ## Setup (Manual)
 ### Configure Trello Access
-1. Follow [these instructions](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/) here to create a `key` and `token`.
-1. Update the `key` and `token` at the top of `Code.js` file
+1. Follow [these instructions](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/) to create a trello access `key` and `token`.
+1. Update the `key` and `token` variables at the top of `Code.js` file
 
 ### Get list ID
-1. Run the following command replacing:
+1. Run the following command:
     ```bash
     key="<your-key>" \
     token="<your-token>" \
@@ -22,7 +21,7 @@ This is an example of using Google App Scripts to create Trello cards when a Goo
     ./getListId.sh
     ```
     (script from [here](https://stackoverflow.com/a/65913616/7607701))
-1. Update the `listId` at the top of `Code.js` file
+1. Update the `listId` variable at the top of `Code.js` file
 
 ### Create Google Form, Spreadsheet & App Script
 1. Create a new blank form at [forms.google.com](http://forms.google.com/)
@@ -48,4 +47,4 @@ This is an example of using Google App Scripts to create Trello cards when a Goo
 1. Check to make sure the card was created :)
 
 ## Setup (Automated)
-Still TBH, something to do with Something to do with: [`clasp`](https://github.com/google/clasp)
+Still TBD, something to do with Something to do with: [`clasp`](https://github.com/google/clasp)
