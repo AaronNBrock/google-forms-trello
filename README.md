@@ -40,7 +40,7 @@ This is an example of using Google App Scripts to create Trello cards when a Goo
     * "Select event type": `On form submit`
     * "Failure notifications settings": Select as desired
 1. When you press "Save" complete the a google Oauth permissions popup.
-  (**Note:** You will see a "Google hasn't verified this app" warning, from which you'll have to select "Advanced" then "Go to Untitled project (unsafe)")
+    (**Note:** You will see a "Google hasn't verified this app" warning, from which you'll have to select "Advanced" then "Go to Untitled project (unsafe)")
 
 
 ### Verify it works
