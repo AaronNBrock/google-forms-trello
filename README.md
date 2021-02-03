@@ -13,8 +13,8 @@ This is an example of using Google App Scripts to create Trello cards when a Goo
 ### Get list ID
 1. Run the following command:
     ```bash
-    key="<your-key>" \
-    token="<your-token>" \
+    trelloKey="<your-key>" \
+    trelloToken="<your-token>" \
     trelloUsername="<you-trello-username>" \
     boardName="<board-name>" \
     listName="<list-name>" \
